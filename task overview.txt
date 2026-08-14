@@ -1,0 +1,36 @@
+TASK TITLE
+
+EDABIP Analytics Dashboard – State Management, Form Validation & Data Visualization
+
+
+PROJECT OVERVIEW
+
+	EDABIP is an analytics dashboard where users can add and manage metrics. It includes dashboard filters, KPI cards, charts, metrics table, and reports. I used Zustand for state management, React Hook Form with Zod for form handling and validation, and Recharts for data visualization.
+
+
+TECHNOLOGIES USED
+
+React
+TypeScript
+Zustand
+React Hook Form
+Zod
+Recharts
+React Router
+Vitest
+LocalStorage
+
+
+PROBLEM FACED
+
+	The main challenges were managing shared state between different pages, handling form validation, and keeping the data after refreshing the page. I solved these using Zustand, Zod, React Hook Form, and Zustand persist middleware. I also faced some issues while setting up Vitest and writing tests, which I fixed by correcting the schema imports and test setup.
+
+
+TASK USES
+
+	This task helped me understand how to manage global state using Zustand, validate forms using Zod, handle forms using React Hook Form, and create charts using Recharts. I also learned how to write tests for Zod schemas and Zustand stores using Vitest.
+
+
+CONCLUSION
+
+	overall, I completed the EDABIP Analytics Dashboard with state management, form validation, charts, filters, CRUD operations, reports, and testing. I achieved 100% test coverage for the tested files and successfully completed the production build. This task helped me understand how to build a structured and maintainable React application.

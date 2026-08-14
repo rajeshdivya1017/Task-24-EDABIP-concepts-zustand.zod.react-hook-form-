@@ -1,0 +1,18 @@
+1. What problem does Zustand solve that Context API also solves? Why would you choose Zustand over Context for a large application like EDABIP?
+
+	Context API and Zustand both are used to share data between components. But for a large application like EDABIP, I prefer Zustand because it is easier to manage global state and actions. It also needs less code and keeps the store separate from the components. So, as the project grows, Zustand will be easier to maintain.
+
+
+2. What does z.infer<typeof Schema> do? Why is it better than writing a separate TypeScript interface for your form data?
+
+	z.infer creates the TypeScript type automatically from our Zod schema. So we don't need to write a separate interface for the same data. If I change the Zod schema, the type also changes automatically. This avoids duplicate code and keeps validation and types in sync.
+
+
+3. What does {...register('title')} do when spread onto an input element? What props does it add and why?
+
+	register('title') connects the title input with React Hook Form. When we spread it into the input, it adds things like name, onChange, onBlur, and ref. So React Hook Form can track the input value and handle validation without us writing those handlers manually.
+
+
+4. What is the persist middleware in Zustand and what did you use it for in this task?
+
+	persist is used to save Zustand store data in localStorage. In my EDABIP project, I used it for dashboard filters and metrics data. So even if I refresh the page, the stored data can remain instead of getting reset.
